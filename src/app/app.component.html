@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+
+
+<input type="text" name="income" placeholder="Annual Income" [(ngModel)]="value" (blur)="transformAmount($event)" (focus)="removeCurrencyPipeFormat($event)"
+ required pattern="[0-9]+" #income="ngModel">
+
+<br>
+	*Focus out to get the desired output
